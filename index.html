@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var clicked = false;
+function myfunction() {
+  clicked = !clicked;
+  const el = document.getElementById("btn");
+  if (clicked) {
+    el.style.color = "red"
+  } else {
+    el.style.color = "black"
+  }
+
+}
+    </script>
+
+<style>
+.product img {
+  margin-bottom: 1em;
+  width: 100px;
+  height: 200px;
+}
+
+#btn {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="/images/shopping.jpg" alt="">
+        <p id="btn" onclick="myfunction()">
+          &#10084;
+        </p>
+      </div>
+</body>
+</html>
